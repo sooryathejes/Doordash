@@ -842,6 +842,9 @@
     display: flex;
     overflow-x: auto;
  }
+ .scroll-items-main::-webkit-scrollbar{
+    display: none;
+ }
 
  .scroll-img {
     width: 100%;

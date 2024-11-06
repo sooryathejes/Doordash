@@ -234,6 +234,7 @@
 }
 
  .search {
+    display: flex;
      justify-self: center;
      margin-top: 17px;
      width: 304px;
@@ -247,7 +248,6 @@
  .search-bar {
     width: auto;
     height: 52px;
-    margin-top: 6px;
     margin-left: 16px;
     margin-right: 24px;
     display: flex;
@@ -266,6 +266,10 @@
  }
  .search-icon{
     display: block;
+    margin-top: 7px;
+ }
+ .submit-button{
+    margin-top: 6px;
  }
 
  .search-bar svg {
@@ -1310,6 +1314,7 @@
      }
 
      .search {
+        display: flex;
         justify-self: center;
         margin-top: 17px;
         width: 408px;
@@ -1319,11 +1324,23 @@
         border-radius: 30px;
 
     }
+    .search-bar{
+        width: 100%;
+        margin-right: 16px;
+        margin-left: 20px;
+    }
     .location-icon{
         display: block;
+        margin-top: 8px;
     }
     .search-icon{
         display: none;
+     }
+     .placehold{
+        margin-top: 4px;
+     }
+     .submit-button{
+        margin-top: 8px;
      }
 
      .signin-signup-button {
@@ -1465,7 +1482,8 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        gap: 60px;
+        row-gap: 60px;
+        column-gap: 60px;
         width: 100%;
         max-width: 1184px;
 
@@ -1545,9 +1563,11 @@
 
      .offers2-main {
          display: flex;
+         justify-content: space-between;
+         row-gap: 60px;
+         column-gap: 60px;
          flex-direction: row;
          justify-content: center;
-         gap: 60px;
      }
      .offers-image2{
         height: 508px;
@@ -1632,8 +1652,10 @@
      .offers3 {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        gap: 60px;
+        justify-content: flex-end;
+        row-gap: 60px;
+        column-gap: 60px;
+        max-width: 1184px;
         height: 505px;
         width: auto;
         padding: 60px 20px 20px;
@@ -1800,6 +1822,7 @@
      .horizondal-scroll {
          display: flex;
          background: #fef1ee;
+         align-self: flex-start;
      }
      .scroll-items-main{
         display: flex;
@@ -1808,6 +1831,8 @@
         width: auto;
         overflow-x: hidden;
         flex-wrap: wrap;
+        max-width: 1180px;
+        align-items: flex-start;
 
 
 
@@ -1820,15 +1845,15 @@
          margin: 0px;
          height: auto;
           display: flex; 
+          align-items: center;
          flex-direction: column;
          justify-content: center; 
      }
 
      .scroll-img {
-         width: 100;
+        width: 44.810vw;
          max-width: 552px;
          height: 44.9vw;
-         max-height: 552px;
          object-fit: cover;
      }
 
@@ -2164,7 +2189,8 @@
         margin-top: 0px;
     }
     .search {
-        justify-self: center;
+        display: flex;
+        justify-self: cente;
         margin-top: 9px;
         width: 408px;
         height: 56px;
@@ -2173,6 +2199,7 @@
         border-radius: 30px;
 
     }
+    
     .signin2{
         display: none;
     }
@@ -2363,7 +2390,7 @@
  
  @media screen and (min-width:1184px){
     .search-bar {
-        width: auto;
+        width: 100%;
         height: 52px;
         margin-right: 10px;
         display: flex;
@@ -2397,7 +2424,7 @@
         display: flex;
         justify-content: center;
         margin-top: 28px;
-        margin-bottom: 84px;
+        margin-bottom: 42px;
         margin-left: -30px;
         padding: 12px;
 
@@ -2407,12 +2434,12 @@
         width: 90%;
         justify-content: center;
         flex-direction: row;
-        margin: 48px 0px;
+        margin: 68px;
         max-width: 1104px;
+        align-items: flex-start;
    
     }
-    .services-discription{
-
+    .services-discription span{
     }
    
     .dasher {
@@ -2424,7 +2451,7 @@
         flex-direction: column;
         padding: 16px ;
     }
-    .offers-main{
+     .offers-main{
         box-sizing: border-box;
         display: flex;
         flex-direction: row-reverse;
@@ -2434,51 +2461,35 @@
         max-width: 1184px;
      }
      .offer-contents {
-        display: flex;
-        flex-direction: column;
-        width: 65.5%;
-        max-width: 400px;
-        justify-content: center;
+        
         margin-top: -35px;
         margin-left: 15px;
     }
     .offers-img {
-        display: flex;
-        width: 38.6vw;
-        max-width: 695px;
-        height: 500px;
+       
         margin-top: -18px;
         margin-left: -15px;
-        background-position: center;
-        object-fit: cover;
-        box-sizing: border-box;
-        overflow-clip-margin: content-box;
-        overflow: auto;
-    }
-    .offer-contents2{
-        display: flex;
-        flex-direction: column;
-        width: 300.13px;
-        justify-content: center;
-        margin-top: 10px;
-        margin-left: -250px;
-    }
-    .offer-contents2 span{
-        width: 400px;
-    }
-    .offers-img2 {
-        display: flex;
-        width: 38.6vw;
+       
+    } 
+
+   
+    
+ 
+    .offers-image2{
         height: 500px;
-        object-fit: cover;
-        margin-top: 5px;
-    }
+        width: 57.77vw;
+        max-width: 725px;
+        margin-left: 0px;
+        gap: 0px;
+     }
     .offers3{
         margin-top: -10px;
+        display: flex;
+        justify-self: center;
     }
     .offers3-img {
         display: flex;
-        width: 37.429%;
+        width: 57.77vw;
         height: 500px;
         margin-top: 4px;
         object-fit: cover;
@@ -2486,7 +2497,7 @@
     .offer3-contents {
         display: flex;
         flex-direction: column;
-        width: 404.16px;
+        width: 34.1vw;
         justify-content: center;
         margin-top: 10px;
     }
@@ -2525,22 +2536,30 @@
         margin-top: 6px;
     }
     .scroll-items-main{
-        width: 65%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
     }
+    .scroll-items {
+        display: flex;
+        align-items: center;
+         margin-top: 2px;
+         padding: 30px;
+     } 
+
     .scroll-contents{
-        width: 100%;
+        width: auto;
     }
     .helpping-you-with-text{
-        width: 25%;
+        width: 40%;
     }
     .unlocking-opportunity{
-        width: 30%;
+        width: 50%;
         justify-self: center;
     }
     .footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
         column-gap: 200px;
     }
     .footer-contents{
@@ -2554,6 +2573,7 @@
     }
     .footer-contents2{
         width: 271px;
+
     }
     .footer-contents3{
         width: 271px;
@@ -2565,9 +2585,12 @@
         gap: 10px;
     }
     .footer-final-section{
-        gap: 80px;
+        gap: 50px;
     }
     .footer-download-icons2{
+    }
+    .scroll-img{
+        width: 46.622vw;
     }
 
    
@@ -2576,4 +2599,25 @@
     .footer-download-icons2{
         margin-left: 150px;
     }
- }
+    .footer-contents{
+        width: 60%;
+        margin-left: 180px;
+    }
+    .footer-contents2-main{
+        width: 60%;
+        margin-left: 180px;
+    }
+    .helpping-you-with-text{
+        width: 35%;
+    }
+    .cities-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .list-items{
+        width: 74%;
+        align-self: center;
+    }
+    
+
+}
